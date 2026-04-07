@@ -52,6 +52,7 @@ ip dhcp pool HR
  ```
  Sh ip int br
  ```
+ ![Sh ip](screenshots/sh ip int br.jpeg)
  
 
 ## 🎯 Skills Demonstrated
