@@ -1,0 +1,25 @@
+! L2 Switch 1 - HR (VLAN10) + Test (VLAN30)
+hostname L2Switch1-HR-Test
+!
+vlan 10
+ name HR
+vlan 30
+ name Test
+!
+interface range FastEthernet0/1 - 8
+ switchport mode access
+ switchport access vlan 10
+ no shutdown
+!
+interface range FastEthernet0/9 - 16
+ switchport mode access
+ switchport access vlan 30
+ no shutdown
+!
+interface GigabitEthernet0/1
+ switchport trunk encapsulation dot1Q
+ switchport mode trunk
+ switchport trunk allowed vlan 10,20,30,40
+ no shutdown
+!
+end

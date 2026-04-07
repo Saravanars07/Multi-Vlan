@@ -1,0 +1,52 @@
+! C2691 Router - 4 Department VLAN/DHCP Router-on-a-Stick
+! 192.168.1.0/24 divided into 4x/26 subnets
+hostname 4Dept-Router
+!
+interface GigabitEthernet0/0
+ no ip address
+ no shutdown
+!
+interface GigabitEthernet0/0.10
+ encapsulation dot1Q 10
+ ip address 192.168.1.1 255.255.255.192
+ no shutdown
+!
+interface GigabitEthernet0/0.20
+ encapsulation dot1Q 20
+ ip address 192.168.1.65 255.255.255.192
+ no shutdown
+!
+interface GigabitEthernet0/0.30
+ encapsulation dot1Q 30
+ ip address 192.168.1.129 255.255.255.192
+ no shutdown
+!
+interface GigabitEthernet0/0.40
+ encapsulation dot1Q 40
+ ip address 192.168.1.193 255.255.255.192
+ no shutdown
+!
+ip dhcp excluded-address 192.168.1.1 192.168.1.65
+ip dhcp excluded-address 192.168.1.129 192.168.1.193
+!
+ip dhcp pool HR
+ network 192.168.1.0 255.255.255.192
+ default-router 192.168.1.1
+ dns-server 1.1.1.1
+!
+ip dhcp pool Dev
+ network 192.168.1.64 255.255.255.192
+ default-router 192.168.1.65
+ dns-server 1.1.1.1
+!
+ip dhcp pool Test
+ network 192.168.1.128 255.255.255.192
+ default-router 192.168.1.129
+ dns-server 1.1.1.1
+!
+ip dhcp pool OP
+ network 192.168.1.192 255.255.255.192
+ default-router 192.168.1.193
+ dns-server 1.1.1.1
+!
+endS
