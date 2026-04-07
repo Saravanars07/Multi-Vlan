@@ -56,8 +56,14 @@ ip dhcp pool HR
  ```
  Sh ip int br
  ```
- ![Sh ip](screenshots/sh ip int br.jpeg)
- 
+ ![Shipintbr](screenshots/shipintbr.png)
+
+ - Router in Dhcp
+   
+ ```
+ sh ip pool
+````
+ ![shipdhcpdool](screenshots/sh
 
 ## 🎯 Skills Demonstrated
 - Advanced IP Subnetting (/24→4×/26)
