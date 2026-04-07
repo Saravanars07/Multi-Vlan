@@ -48,6 +48,10 @@ ip dhcp pool HR
 - show ip route ← 4×/26 connected routes
 
 ## 📷 Screenshots
+**Topology**
+
+![Topology](screenshots/Topology.png)
+
 **Router**
  ```
  Sh ip int br
