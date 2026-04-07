@@ -56,7 +56,7 @@ ip dhcp pool HR
  ```
  Sh ip int br
  ```
- ![Shipintbr](screenshots/shipintbr.png)
+ ![Shipintbr](screenshots/shipinbr.png)
 
  - Router in Dhcp
    
