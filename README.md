@@ -56,14 +56,49 @@ ip dhcp pool HR
  ```
  Sh ip int br
  ```
- ![Shipintbr](screenshots/shipinbr.png)
+ ![Sh ip int br](screenshots/shipinbr.png)
 
  - Router in Dhcp
    
  ```
  sh ip pool
 ````
- ![shipdhcpdool](screenshots/sh
+ ![sh ip dhcp dool](screenshots/shipdhcppool.png)
+
+ ```
+sh ip dhcp bi
+```
+![Sh ip dhcp bi](screenshots/shipdhcpbi.png)
+
+```
+sh run | s dhcp
+```
+![sh run dhcp](screenshots/shrunsdhcp.png)
+
+
+**Switch**
+ ```
+sh vl br
+```
+![Showvl](screenshots/shvlbr.png)
+
+```
+#Switch to Router connted port config#
+sh int tr
+```
+![Shinbrl](screenshots/shintr.png)
+
+**Verity Devices**
+ - Hr dept Ip add
+   
+   ![Hr Dept pc](screenshots/Hr%20Dept%20pc.png)
+ - Dev dept ip add
+   ![Dev Dept pc](screenshots/Dev%20Dept%20pc.png)
+ - Test dept ip add
+   ![Test Dept pc](screenshots/Test%20Dept%20pc.png)
+ - Acc dept ip add
+    ![Acc Dept pc](screenshots/Acc%20Dept%20pc.png)
+ 
 
 ## 🎯 Skills Demonstrated
 - Advanced IP Subnetting (/24→4×/26)
